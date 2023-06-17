@@ -899,16 +899,8 @@ p {
   background-image: url('img/top-bg.jpg');
 }
 
-.bg-\[url\(\'img\/hero\.jpg\'\)\] {
-  background-image: url('img/hero.jpg');
-}
-
 .bg-cover {
   background-size: cover;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
 }
 
 .bg-center {
