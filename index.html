@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="photoswipe/photoswipe.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Наши работы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <script>
+        const checkbox = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu");
+        menu.addEventListener("click", (e) => {
+          if (e.target.tagName === "A") {
+            checkbox.checked = false;
+          }
+        });
+      </script>
+    </section>
+    <!-- hero -->
+    <div
+      id="hero"
+      class="min-h-screen bg-[url('img/top-bg.jpg')] bg-center bg-no-repeat bg-fixed bg-cover"
+    >
+      <div
+        class="w-full h-full min-h-screen flex justify-center items-center text-white text-center"
+        style="
+          background-image: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.7)
+          );
+        "
+      >
+        <article class="text-white text-center p-4">
+          <p class="mb-7 lg:text-xl md:text-lg text-base">
+            Ателье по пошиву одежды
+          </p>
+          <h1 class="text-white">Ariadna</h1>
+          <p class="lg:text-2xl md:text-xl text-lg">
+            Москва, ул. Оршанская 11 <br />метро Молодёжная
+            <a
+              class="block lg:text-4xl md:text-3xl text-2xl font-bold mt-4"
+              href="tel:+7 925 806 9062"
+              >+7 925 806-90-62</a
+            >
+          </p>
+        </article>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="section min-h-screen flex items-center">
+      <div class="container flex flex-col items-center text-center">
+        <h2>Обо мне</h2>
+        <div class="rounded-full overflow-hidden w-48 h-48">
+          <img src="img/1.jpg" alt="Марина Филько" />
+        </div>
+        <h3 class="mt-10 mb-4 text-xl font-medium">Марина Филько</h3>
+        <p>Шью 100 милионов лет, еще динозаврам шкуры шила</p>
+        <span class="text-xs font-light text-zinc-500"
+          >Пошьювсечтозахотите</span
+        >
+      </div>
+    </div>
+    <!-- services -->
+    <div
+      id="services"
+      class="section min-h-screen bg-sky-300 flex items-center"
+    >
+      <div class="container flex flex-col items-center">
+        <h2>Услуги</h2>
+        <ul class="services">
+          <li>Ремонт пошив одежды</li>
+          <li>Индивидуальный подход</li>
+          <li>Работа с мехом, кожей, текстиль, шторы</li>
+          <li>Возможен выезд на дом</li>
+          <li>Новые технологии</li>
+        </ul>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio" class="section">
+      <h2>Наши работы</h2>
+
+      <div
+        class="pswp-gallery pswp-gallery--single-column grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 gap-2"
+        id="my-gallery"
+      >
+        <a
+          href="portfolio/1.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m1.jpg" alt="m1.jpg" /></a
+        ><a
+          href="portfolio/2.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m2.jpg" alt="m2.jpg" /></a
+        ><a
+          href="portfolio/3.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m3.jpg" alt="m3.jpg" /></a
+        ><a
+          href="portfolio/4.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m4.jpg" alt="m4.jpg" /></a
+        ><a
+          href="portfolio/5.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m5.jpg" alt="m5.jpg" /></a
+        ><a
+          href="portfolio/6.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m6.jpg" alt="m6.jpg" /></a
+        ><a
+          href="portfolio/7.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m7.jpg" alt="m7.jpg" /></a
+        ><a
+          href="portfolio/8.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m8.jpg" alt="m8.jpg" /></a
+        ><a
+          href="portfolio/9.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m9.jpg" alt="m9.jpg" /></a
+        ><a
+          href="portfolio/10.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m10.jpg" alt="m10.jpg" /></a
+        ><a
+          href="portfolio/11.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m11.jpg" alt="m11.jpg" /></a
+        ><a
+          href="portfolio/12.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m12.jpg" alt="m12.jpg" /></a
+        ><a
+          href="portfolio/13.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m13.jpg" alt="m13.jpg" /></a
+        ><a
+          href="portfolio/14.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m14.jpg" alt="m14.jpg" /></a
+        ><a
+          href="portfolio/15.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m15.jpg" alt="m15.jpg" /></a
+        ><a
+          href="portfolio/16.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m16.jpg" alt="m16.jpg" /></a
+        ><a
+          href="portfolio/17.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m17.jpg" alt="m17.jpg" /></a
+        ><a
+          href="portfolio/18.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m18.jpg" alt="m18.jpg" /></a
+        ><a
+          href="portfolio/19.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m19.jpg" alt="m19.jpg" /></a
+        ><a
+          href="portfolio/20.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m20.jpg" alt="m20.jpg" /></a
+        ><a
+          href="portfolio/21.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m21.jpg" alt="m21.jpg" /></a
+        ><a
+          href="portfolio/22.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m22.jpg" alt="m22.jpg" /></a
+        ><a
+          href="portfolio/23.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m23.jpg" alt="m23.jpg" /></a
+        ><a
+          href="portfolio/24.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m24.jpg" alt="m24.jpg" /></a
+        ><a
+          href="portfolio/25.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m25.jpg" alt="m25.jpg" /></a
+        ><a
+          href="portfolio/26.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m26.jpg" alt="m26.jpg" /></a
+        ><a
+          href="portfolio/27.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m27.jpg" alt="m27.jpg" /></a
+        ><a
+          href="portfolio/28.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m28.jpg" alt="m28.jpg" /></a
+        ><a
+          href="portfolio/29.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m29.jpg" alt="m29.jpg" /></a
+        ><a
+          href="portfolio/30.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m30.jpg" alt="m30.jpg" /></a
+        ><a
+          href="portfolio/31.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m31.jpg" alt="m31.jpg" /></a
+        ><a
+          href="portfolio/32.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m32.jpg" alt="m32.jpg" /></a
+        ><a
+          href="portfolio/33.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m33.jpg" alt="m33.jpg" /></a
+        ><a
+          href="portfolio/34.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m34.jpg" alt="m34.jpg" /></a
+        ><a
+          href="portfolio/35.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m35.jpg" alt="m35.jpg" /></a
+        ><a
+          href="portfolio/36.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m36.jpg" alt="m36.jpg" /></a
+        ><a
+          href="portfolio/37.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m37.jpg" alt="m37.jpg" /></a
+        ><a
+          href="portfolio/38.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m38.jpg" alt="m38.jpg" /></a
+        ><a
+          href="portfolio/39.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m39.jpg" alt="m39.jpg" /></a
+        ><a
+          href="portfolio/40.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m40.jpg" alt="m40.jpg" /></a
+        ><a
+          href="portfolio/41.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m41.jpg" alt="m41.jpg" /></a
+        ><a
+          href="portfolio/42.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m42.jpg" alt="m42.jpg" /></a
+        ><a
+          href="portfolio/43.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m43.jpg" alt="m43.jpg" /></a
+        ><a
+          href="portfolio/44.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m44.jpg" alt="m44.jpg" /></a
+        ><a
+          href="portfolio/45.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m45.jpg" alt="m45.jpg" /></a
+        ><a
+          href="portfolio/46.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m46.jpg" alt="m46.jpg" /></a
+        ><a
+          href="portfolio/47.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m47.jpg" alt="m47.jpg" /></a
+        ><a
+          href="portfolio/48.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m48.jpg" alt="m48.jpg" /></a
+        ><a
+          href="portfolio/49.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m49.jpg" alt="m49.jpg" /></a
+        ><a
+          href="portfolio/50.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m50.jpg" alt="m50.jpg" /></a
+        ><a
+          href="portfolio/51.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m51.jpg" alt="m51.jpg" /></a
+        ><a
+          href="portfolio/52.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m52.jpg" alt="m52.jpg" /></a
+        ><a
+          href="portfolio/53.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m53.jpg" alt="m53.jpg" /></a
+        ><a
+          href="portfolio/54.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m54.jpg" alt="m54.jpg" /></a
+        ><a
+          href="portfolio/55.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m55.jpg" alt="m55.jpg" /></a
+        ><a
+          href="portfolio/56.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m56.jpg" alt="m56.jpg" /></a
+        ><a
+          href="portfolio/57.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m57.jpg" alt="m57.jpg" /></a
+        ><a
+          href="portfolio/58.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m58.jpg" alt="m58.jpg" /></a
+        ><a
+          href="portfolio/59.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m59.jpg" alt="m59.jpg" /></a
+        ><a
+          href="portfolio/60.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m60.jpg" alt="m60.jpg" /></a
+        ><a
+          href="portfolio/61.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m61.jpg" alt="m61.jpg" /></a
+        ><a
+          href="portfolio/62.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m62.jpg" alt="m62.jpg" /></a
+        ><a
+          href="portfolio/63.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m63.jpg" alt="m63.jpg" /></a
+        ><a
+          href="portfolio/64.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m64.jpg" alt="m64.jpg" /></a
+        ><a
+          href="portfolio/65.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m65.jpg" alt="m65.jpg" /></a
+        ><a
+          href="portfolio/66.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m66.jpg" alt="m66.jpg" /></a
+        ><a
+          href="portfolio/67.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m67.jpg" alt="m67.jpg" /></a
+        ><a
+          href="portfolio/68.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m68.jpg" alt="m68.jpg" /></a
+        ><a
+          href="portfolio/69.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m69.jpg" alt="m69.jpg" /></a
+        ><a
+          href="portfolio/70.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m70.jpg" alt="m70.jpg" /></a
+        ><a
+          href="portfolio/71.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m71.jpg" alt="m71.jpg" /></a
+        ><a
+          href="portfolio/72.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m72.jpg" alt="m72.jpg" /></a
+        ><a
+          href="portfolio/73.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m73.jpg" alt="m73.jpg" /></a
+        ><a
+          href="portfolio/74.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m74.jpg" alt="m74.jpg" /></a
+        ><a
+          href="portfolio/75.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m75.jpg" alt="m75.jpg" /></a
+        ><a
+          href="portfolio/76.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m76.jpg" alt="m76.jpg" /></a
+        ><a
+          href="portfolio/77.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m77.jpg" alt="m77.jpg" /></a
+        ><a
+          href="portfolio/78.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m78.jpg" alt="m78.jpg" /></a
+        ><a
+          href="portfolio/79.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m79.jpg" alt="m79.jpg" /></a
+        ><a
+          href="portfolio/80.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m80.jpg" alt="m80.jpg" /></a
+        ><a
+          href="portfolio/81.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m81.jpg" alt="m81.jpg" /></a
+        ><a
+          href="portfolio/82.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m82.jpg" alt="m82.jpg" /></a
+        ><a
+          href="portfolio/83.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m83.jpg" alt="m83.jpg" /></a
+        ><a
+          href="portfolio/84.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m84.jpg" alt="m84.jpg" /></a
+        ><a
+          href="portfolio/85.jpg"
+          data-pswp-width="1260"
+          data-pswp-height="1680"
+          target="_blank"
+          ><img src="portfolio/m85.jpg" alt="m85.jpg"
+        /></a>
+      </div>
+
+      <script type="module">
+        import PhotoSwipeLightbox from "./photoswipe/photoswipe-lightbox.esm.min.js";
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: "#my-gallery",
+          children: "a",
+          pswpModule: () => import("./photoswipe/photoswipe.esm.min.js"),
+        });
+        lightbox.init();
+      </script>
+    </div>
+    <hr class="h-[2px] bg-[#ddd]" />
+    <!-- contacts -->
+    <div id="contacts" class="section min-h-screen flex items-center">
+      <div class="container text-center">
+        <h2>Контакты</h2>
+        <p class="lg:text-2xl text-xl font-light">
+          <a
+            class="block lg:text-[40px] text-[34px] font-light my-10"
+            href="tel:+7 925 806 9062"
+            >+7 925 806-90-62</a
+          >
+          Москва, ул. Оршанская 11 <br />метро Молодёжная
+        </p>
+        <div class="flex justify-center gap-2">
+          <a href="https://ok.ru/profile/559415917141" target="_blank">
+            <svg
+              class="w-12 h-12"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm13.463-63.08c0 7.688-6.233 13.92-13.92 13.92-7.688 0-13.92-6.232-13.92-13.92S41.855 23 49.543 23s13.92 6.232 13.92 13.92Zm-7.072 0a6.848 6.848 0 1 0-13.696 0 6.848 6.848 0 0 0 13.696 0Zm3.341 15.006c2.894-2.28 5.07-.967 5.856.612 1.37 2.753-.178 4.084-3.671 6.326-2.96 1.9-7.016 2.619-9.665 2.892l2.217 2.216 8.203 8.203a3.192 3.192 0 0 1 0 4.514l-.376.376a3.192 3.192 0 0 1-4.514 0l-8.203-8.203-8.203 8.203a3.192 3.192 0 0 1-4.514 0l-.376-.376a3.192 3.192 0 0 1 0-4.514l8.203-8.203 2.21-2.21c-2.648-.268-6.748-.983-9.732-2.898-3.494-2.243-5.041-3.573-3.671-6.326.786-1.579 2.963-2.892 5.855-.612 3.91 3.08 10.19 3.08 10.19 3.08s6.282 0 10.191-3.08Z"
+                fill="#000000"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://vk.com/id468533451" target="_blank">
+            <svg
+              class="w-12 h-12"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
+                fill="#000000"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
